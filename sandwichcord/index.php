@@ -9,8 +9,13 @@
                 <title>Document</title>
             </head>
             <body>
-                <h1>Página en construcción...</h1>
-                <p>Hola, si vienes por la documentación de Sandwichcord Framework, <a href="/sandwichcord">Haz click en este enlace.</a> </p>
+                <h1>Sandwichcord Framework</h1>
+                <hr>
+                <h3>Versiones diponibles<h3>
+                <h5>Versión 0.6.0-SNAPSHOT</h5>
+                <p><a href="/v0.6.0/javadoc/">Documentación</a>
+                <h5>Versión 0.7.0-SNAPSHOT</h5>
+                <p><a href="/v0.7.0/javadoc/">Documentación</a>
             </body>
         </html>';
 ?>
