@@ -10,7 +10,7 @@
             </head>
             <body>
                 <h1>Página en construcción...</h1>
-                <p>Hola, si vienes por la documentación de Sandwichcord Framework, <a href="/sandwichcord">Haz click en este enlace.</a> </p>
+                <p>Hola, si vienes por la documentación de Sandwichcord Framework, <a href="/sandwichcord/">Haz click en este enlace.</a> </p>
             </body>
         </html>';
 ?>
