@@ -14,7 +14,7 @@
             #no implementado aun.
         }
     }else{
-        header('Location: http://jaxsandwich.com/sandwichcord/'.$LATEST_VER_LEGACY.'/');
+        header('Location: http://jaxsandwich.com/sandwichcord/'.$LATEST_VER_LEGACY.'/javadoc');
         exit();
     }
 ?>
