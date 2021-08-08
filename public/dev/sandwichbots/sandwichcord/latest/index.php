@@ -5,7 +5,7 @@
         $url = $_GET['q'];
         if(isset($_GET['legacy'])){
             if(str_starts_with($url, '/javadoc/com/jaxsandwich/sandwichcord/')){
-                header('Location: http://jaxsandwich.com/sandwichcord/'.$LATEST_VER_LEGACY.$url);
+                header('Location: http://sandwichcord.jaxsandwich.com/'.$LATEST_VER_LEGACY.$url);
                 exit();
             }else{
                 exit();
@@ -14,7 +14,7 @@
             #no implementado aun.
         }
     }else{
-        header('Location: http://jaxsandwich.com/sandwichcord/'.$LATEST_VER_LEGACY.'/javadoc');
+        header('Location: http://sandwichcord.jaxsandwich.com/'.$LATEST_VER_LEGACY.'/javadoc');
         exit();
     }
 ?>
