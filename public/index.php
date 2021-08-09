@@ -1,3 +1,4 @@
+<?php echo '
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -10,11 +11,9 @@
         <link rel="stylesheet" href="http://src.jaxsandwich.com/css/estilo.css" crossorigin="anonymous">
         <link rel="stylesheet" href="../public/src/css/estilo.css">
     </head>
-    <body class="bg-dark text-white">
-        <php?
-            require_once "src/include/navbar.html";
-        ?>
-        <div class="container-fluid">
+    <body class="bg-dark text-white">';
+        require_once "src/include/navbar.php";
+echo    '<div class="container-fluid">
             <div class="row">
                 <h1 class="col-12 text-center p-3">Página en construcción...</h1>
                 <hr>
@@ -34,4 +33,5 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
-</html>
+</html>';
+?>

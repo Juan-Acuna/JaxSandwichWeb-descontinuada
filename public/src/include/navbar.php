@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark navbar-expand-lg bg-danger text-white">
+<?php echo '<nav class="navbar navbar-dark navbar-expand-lg bg-danger text-white">
     <div class="container-fluid">
         <a class="navbar-brand text-white fs-3" href="http://jaxsandwich.com/">Jax Sandwich</a>
         <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,4 +29,5 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav>';
+?>
