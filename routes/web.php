@@ -22,6 +22,7 @@ Route::get('dev',[MainController::class, 'dev']);
 Route::get('dev/sandwichbots', [MainController::class, 'sandwichbots']);
 Route::get('dev/sandwichbots/sandwichcord', [SandwichcordController::class, 'index']);
 Route::get('dev/sandwichbots/sandwichcord/latest', [SandwichcordController::class, 'latest']);
+Route::get('dev/sandwichbots/sandwichcord/{version}', [SandwichcordController::class, 'api']);
 Route::get('dev/bot', [JaxSandwichBotController::class, 'index']);
 //Route::get('api/new', [ApiController::class, 'new']);
 //Route::get('api/latest', [ApiController::class, 'latest']);
