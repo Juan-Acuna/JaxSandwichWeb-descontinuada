@@ -14,6 +14,6 @@ class SandwichcordController extends Controller
     }
     public function api($version)
     {
-        return view('dev.sandwichbots.sandwichcord.'.$version.'.javadoc.index');
+        return view('dev.sandwichbots.sandwichcord.'.str_replace('.','_',$version).'.javadoc.index');
     }
 }
