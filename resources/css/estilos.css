@@ -1,0 +1,7 @@
+.flotante, .tarjeta{
+    box-shadow: 4px 4px 10px #500;
+}
+.tarjeta{
+    border: none;
+    border-radius: 5px;
+}
