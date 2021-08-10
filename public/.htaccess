@@ -6,12 +6,17 @@
     </IfModule>
     RewriteEngine On
 
-    RewriteCond %{REQUEST_URI} ^/docs/(.+) [NC]
+    RewriteCond %{HTTP_HOST} ^docs/(.+) [NC]
     RewriteRule (.+) - [NC,L]
+    # http://docs.%{HTTP_HOST}%{REQUEST_URI}
+    RewriteRule %{HTTP_HOST}/docs\.(.+) - [NC,L,R=301]
 
-    RewriteRule %{HTTP_HOST}/docs\.(.+) http://docs.%{HTTP_HOST}%{REQUEST_URI} [NC,L,R=301]
-
+    RewriteCond %{HTTP_HOST} ^sandwichcord/(.+) [NC]
+    RewriteRule (.+) http://jaxsandwich.com/dev/sandwichbots/sandwichcord/ [NC,L]
     
+    RewriteCond %{HTTP_HOST} ^bot/(.+) [NC]
+    RewriteRule (.+) http://jaxsandwich.com/dev/bot/ [NC,L]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
