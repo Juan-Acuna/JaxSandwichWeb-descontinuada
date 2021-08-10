@@ -12,13 +12,13 @@
         <div class="col-xs-12 col-md-6 p-3">
             <div class="tarjeta p-5 bg-white text-dark">
                 <h5>Versión 0.6.0-SNAPSHOT</h5>
-                <a href="sandwichcord/v0.6.0/javadoc/">Documentación</a>
+                <a href="http://docs.jaxsandwich.com/sandwichcord/v0.6.0/javadoc/">Documentación</a>
             </div>
         </div>
         <div class="col-xs-12 col-md-6 p-3">
             <div class="tarjeta p-5 bg-white text-dark">
                 <h5>Versión 0.7.0-SNAPSHOT</h5>
-                <a href="sandwichcord/v0.7.0/javadoc/">Documentación</a>
+                <a href="http://docs.jaxsandwich.com/sandwichcord/v0.7.0/javadoc/">Documentación</a>
             </div>
         </div>
     </div>

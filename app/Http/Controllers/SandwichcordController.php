@@ -12,8 +12,4 @@ class SandwichcordController extends Controller
     public function latest(){
         return view('dev.sandwichbots.sandwichcord.latest');
     }
-    public function api($version)
-    {
-        return view('dev.sandwichbots.sandwichcord.'.str_replace('.','_',$version).'.javadoc.index');
-    }
 }

@@ -2,8 +2,12 @@
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
-
     RewriteEngine On
+    
+
+    #/JaxSandwichWeb/public
+    RewriteCond %{REQUEST_URI} /JaxSandwichWeb/public/docs/(.+)[L]
+    RewriteRule ^ %1 
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -12,10 +16,11 @@
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+    RewriteRule ^ %1/$ [L,R=301]
 
     # Send Requests To Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+    
 </IfModule>
