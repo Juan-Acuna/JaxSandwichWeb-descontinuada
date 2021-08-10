@@ -10,7 +10,7 @@
     RewriteRule ^ %1 
 
     RewriteCond %{HTTP_HOST} ^docs\..+$
-    RewriteRule ^ /docs/%1[L]
+    RewriteRule ^ {HTTP_HOST}/docs/%1[L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
