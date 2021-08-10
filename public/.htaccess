@@ -7,6 +7,8 @@
     RewriteEngine On
     RewriteBase /
 
+    ErrorDocument 404 /404.php
+
     RewriteCond %{HTTP_HOST} ^docs\.(.+) [NC]
     RewriteRule (.+) - [L]
 
