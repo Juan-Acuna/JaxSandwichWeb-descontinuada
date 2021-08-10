@@ -6,7 +6,7 @@
     
 
     #/JaxSandwichWeb/public
-    RewriteCond %{REQUEST_URI} /JaxSandwichWeb/public/docs/(.+)[L]
+    RewriteCond %{REQUEST_URI} /docs/(.+)[L]
     RewriteRule ^ %1 
 
     # Handle Authorization Header
