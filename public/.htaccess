@@ -7,15 +7,19 @@
     RewriteEngine On
     RewriteBase /
 
-    RewriteRule ^docs\.jaxsandwich\.com/%{REQUEST_URI} - [NC,L]
+    RewriteCond %{HTTP_HOST} ^docs\.(.+)[NC]
+    RewriteRule (.+) - [L]
 
-    # http://docs.%{HTTP_HOST}%{REQUEST_URI}
     RewriteRule %{HTTP_HOST}/docs/(.+) - [NC,L,R=301]
 
-    RewriteRule ^sandwichcord\.jaxsandwich\.com/%{REQUEST_URI} - [NC, L]
+    RewriteCond %{HTTP_HOST} ^sandwichcord\.(.+) [NC]
+    RewriteRule (.+) - [L]
     
     RewriteCond %{HTTP_HOST} ^bot\.(.+) [NC]
-    RewriteRule (.+) http://jaxsandwich.com/dev/bot/ [NC,L]
+    RewriteRule (.+) - [L]
+
+    RewriteCond %{HTTP_HOST} ^bot\.(.+) [NC]
+    RewriteRule (.+) - [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
