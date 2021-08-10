@@ -1,6 +1,8 @@
 <?php
     echo '**************************************';
     echo 'URL: ';
+    var_dump($_REQUEST[0]);
+    var_dump($_REQUEST[26]);
     var_dump($_REQUEST["REQUEST_URI"]);
     echo '**************************************<br><br>';
     if(str_ends_with($_REQUEST["REQUEST_URI"],'$')){
