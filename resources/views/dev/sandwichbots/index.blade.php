@@ -12,7 +12,7 @@
         <div class="col-xs-12 col-md-6 p-3">
             <div class="tarjeta p-5 bg-white text-dark">
                 <h4>Sandwichcord Framework</h4>
-                <a href="https://sandwichcord.jaxsandwich.com/">Link del proyecto</a>
+                <a href="//sandwichcord.jaxsandwich.com/">Link del proyecto</a>
             </div>
         </div>
     </div>
