@@ -7,16 +7,15 @@
     RewriteEngine On
     RewriteBase /
 
-    RewriteCond %{HTTP_HOST} ^docs\.(.+)[NC]
+    RewriteCond %{HTTP_HOST} ^docs\.(.+) [NC]
     RewriteRule (.+) - [L]
 
-    RewriteRule %{HTTP_HOST}/docs/(.+) - [NC,L,R=301]
+    RewriteCond %{REQUEST_URI} ^docs/(.+) [NC]
+    RewriteRule (.+) - [L]
 
     RewriteCond %{HTTP_HOST} ^sandwichcord\.(.+) [NC]
     RewriteRule (.+) - [L]
     
-    RewriteCond %{HTTP_HOST} ^bot\.(.+) [NC]
-    RewriteRule (.+) - [L]
 
     RewriteCond %{HTTP_HOST} ^bot\.(.+) [NC]
     RewriteRule (.+) - [L]
