@@ -10,7 +10,7 @@
     RewriteCond %{HTTP_HOST} ^docs\.(.+) [NC]
     RewriteRule (.+) - [L]
 
-    RewriteCond %{REQUEST_URI} ^docs/(.+) [NC]
+    RewriteCond %{REQUEST_URI} ^/docs/(.+) [NC]
     RewriteRule (.+) - [L]
 
     RewriteCond %{HTTP_HOST} ^sandwichcord\.(.+) [NC]
