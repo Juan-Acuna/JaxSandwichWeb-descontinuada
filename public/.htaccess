@@ -16,10 +16,10 @@
 
     # RewriteCond %{HTTP_HOST} ^docs\.(.+)[L]
     # RewriteRule ^ http://docs.%{HTTP_HOST}%{REQUEST_URI}[L]
-    RewriteCond %{REQUEST_URI} ^/docs/(.+)
-    RewriteRule (.+) - [L]
+    RewriteCond %{REQUEST_URI} ^/docs/(.+) [NC]
+    RewriteRule (.+) - [NC,L]
 
-    RewriteRule %{HTTP_HOST}/docs/(.+) http://docs.%{HTTP_HOST}%{REQUEST_URI}[L]
+    RewriteRule %{HTTP_HOST}/docs/(.+) http://docs.%{HTTP_HOST}%{REQUEST_URI} [NC,L,R=301]
 
     
     # Handle Authorization Header
@@ -27,9 +27,9 @@
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
     # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/
-    RewriteRule ^ %1/ [L,R=301]
+    # RewriteCond %{REQUEST_FILENAME} !-d
+    # RewriteCond %{REQUEST_URI} (.+)/
+    # RewriteRule ^ %1/ [L,R=301]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
