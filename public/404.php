@@ -1,9 +1,10 @@
 <?php
     echo '**************************************';
-    echo 'URL: '.$_REQUEST['REQUEST_URI'];
+    echo 'URL: ';
+    var_dump($_REQUEST["REQUEST_URI"]);
     echo '**************************************<br><br>';
-    if(str_ends_with($_REQUEST['REQUEST_URI'],'$')){
-        header('Location : //jaxsandwich.com'.substr($_REQUEST['REQUEST_URI'],0,-1));
+    if(str_ends_with($_REQUEST["REQUEST_URI"],'$')){
+        header('Location : //jaxsandwich.com'.substr($_REQUEST["REQUEST_URI"],0,-1));
         exit();
     }else{
         var_dump($_REQUEST);
