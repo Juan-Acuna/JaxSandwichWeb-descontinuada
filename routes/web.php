@@ -23,7 +23,6 @@ Route::get('dev',[MainController::class, 'dev']);
 Route::get('dev/sandwichbots', [MainController::class, 'sandwichbots']);
 Route::get('dev/sandwichbots/sandwichcord', [SandwichcordController::class, 'index']);
 Route::get('dev/sandwichbots/sandwichcord/latest', [SandwichcordController::class, 'latest']);
-Route::get('dev/sandwichbots/sandwichcord/{version}', [SandwichcordController::class, 'api']);
 //Route::get('dev/sandwichbots/sandwichcord/{version}/javadoc', [SandwichcordController::class, 'api']);
 //Route::get('dev/sandwichbots/sandwichcord/{version}/javadoc/{b}/{c}/{d}/{e}/{f}/{g}/{h}/{i}/{j}/{k}/{l}/{m}/{n}', [SandwichcordController::class, 'api']);
 //Route::get('dev/sandwichbots/sandwichcord/{version}/javadoc/{b?}/{c?}/{d?}/{e?}/{f?}/{g?}/{h?}/{i?}/{j?}/{k?}/{l?}/{m?}/{n?}', [JavadocController::class, 'doc']);

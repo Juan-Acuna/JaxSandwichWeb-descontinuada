@@ -6,20 +6,10 @@
     </IfModule>
     RewriteEngine On
 
-
-    # RewriteEngine On
-    # RewriteRule ^robots.txt - [L]
-
-    # /JaxSandwichWeb/public
-    # RewriteCond %{REQUEST_URI} ^/docs/(.+)[L]
-    # RewriteRule ^ %1 
-
-    # RewriteCond %{HTTP_HOST} ^docs\.(.+)[L]
-    # RewriteRule ^ http://docs.%{HTTP_HOST}%{REQUEST_URI}[L]
     RewriteCond %{REQUEST_URI} ^/docs/(.+) [NC]
     RewriteRule (.+) - [NC,L]
 
-    RewriteRule %{HTTP_HOST}/docs/(.+) http://docs.%{HTTP_HOST}%{REQUEST_URI} [NC,L,R=301]
+    RewriteRule %{HTTP_HOST}/docs\.(.+) http://docs.%{HTTP_HOST}%{REQUEST_URI} [NC,L,R=301]
 
     
     # Handle Authorization Header
