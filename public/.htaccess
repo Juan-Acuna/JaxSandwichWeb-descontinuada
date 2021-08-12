@@ -9,17 +9,24 @@
 
     ErrorDocument 404 /404.php
 
-    RewriteCond %{HTTP_HOST} ^docs\.(.+) [NC]
+    # Rutas ignoradas por Laravel
+    
+    RewriteCond %{REQUEST_URI} ^/src/(.+) [NC]
     RewriteRule (.+) - [L]
 
     RewriteCond %{REQUEST_URI} ^/docs/(.+) [NC]
+    RewriteRule (.+) - [L]
+    
+    RewriteCond %{HTTP_HOST} ^docs\.(.+) [NC]
     RewriteRule (.+) - [L]
 
     RewriteCond %{HTTP_HOST} ^sandwichcord\.(.+) [NC]
     RewriteRule (.+) - [L]
     
-
     RewriteCond %{HTTP_HOST} ^bot\.(.+) [NC]
+    RewriteRule (.+) - [L]
+
+    RewriteCond %{HTTP_HOST} ^src\.(.+) [NC]
     RewriteRule (.+) - [L]
 
     # Handle Authorization Header
