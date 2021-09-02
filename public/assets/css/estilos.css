@@ -6,3 +6,7 @@
     border-radius: 5px;
     position: relative;
 }
+.note{
+    left:5%!important;
+    top:12%!important;
+}
