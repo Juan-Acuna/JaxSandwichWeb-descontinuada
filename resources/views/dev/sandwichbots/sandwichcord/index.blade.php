@@ -25,6 +25,7 @@
             </div>
         </div>
         <!--<div class="col-xs-12 col-md-6 p-3">
+            <span class="position-absolute note translate-middle badge rounded-pill bg-danger">Obsoleto</span>
             <div class="tarjeta p-5 bg-white text-dark">
                 <h5>Versión 0.6.x</h5>
                 <a href="//docs.jaxsandwich.com/sandwichcord/v0.6.x/javadoc">Documentación</a>
