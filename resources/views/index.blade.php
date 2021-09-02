@@ -8,12 +8,12 @@
     <div class="row mt-3">
         <div class="col-xs-12 col-md-6 p-3">
             <p class="tarjeta p-5 bg-white text-dark">Si vienes por la documentación de Sandwichcord Framework, 
-                <a href="http://sandwichcord.jaxsandwich.com/">Haz click en este enlace.</a>
+                <a href="//sandwichcord.jaxsandwich.com/">Haz click en este enlace.</a>
             </p>
         </div>
         <div class="col-xs-12 col-md-6 p-3">
             <p class="tarjeta p-5 bg-white text-dark">Si vienes por la documentación de Jax Sandwich Bot, 
-                <a href="http://bot.jaxsandwich.com/">Haz click en este enlace.</a>
+                <a href="//bot.jaxsandwich.com/">Haz click en este enlace.</a>
             </p>
         </div>
     </div>
