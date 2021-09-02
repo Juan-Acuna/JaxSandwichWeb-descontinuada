@@ -7,7 +7,7 @@
     RewriteEngine On
     RewriteBase /
 
-    ErrorDocument 404 /404.php
+    ErrorDocument 404 /404.php[L]
 
     # Rutas ignoradas por Laravel
     
