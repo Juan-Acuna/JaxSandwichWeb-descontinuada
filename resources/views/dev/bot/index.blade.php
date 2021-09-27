@@ -9,7 +9,7 @@
             <div class="tarjeta p-5 bg-white text-dark">
                 <h4>Invitar a Jax Sandwich a tu servidor</h4>
                 <p>Haz click
-                    <a href="https://discord.com/api/oauth2/authorize?client_id=804147434455564288&permissions=8&scope=bot">en est enlace</a>
+                    <a href="https://discord.com/api/oauth2/authorize?client_id=804147434455564288&permissions=8&scope=bot%20applications.commands">en este enlace</a>
                 para invitar al bot a tu servidor.</p>
             </div>
         </div>
