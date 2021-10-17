@@ -10,7 +10,7 @@
     </div>
         <div class="row mt-3"><div class="col-xs-12 col-md-6 p-3">
             <div class="tarjeta p-5 bg-white text-dark">
-                <span class="position-absolute note translate-middle badge rounded-pill bg-success">Actual(Snapshot)</span>
+                <span class="position-absolute note translate-middle badge rounded-pill bg-success">Snapshot</span>
                 <h5>Versión 0.9.0-r02</h5>
                 <a href="//docs.jaxsandwich.com/sandwichcord/v0.9.x/javadoc">Documentación</a>
                 <a href="https://github.com/SandwichBotsTeam/sandwichcord-framework/releases/tag/v0.9.0-beta">Descargar</a>
@@ -18,7 +18,7 @@
         </div>
         <div class="row mt-3"><div class="col-xs-12 col-md-6 p-3">
             <div class="tarjeta p-5 bg-white text-dark">
-                <span class="position-absolute note translate-middle badge rounded-pill bg-success">Actual(Estable)</span>
+                <span class="position-absolute note translate-middle badge rounded-pill bg-success">Actual</span>
                 <h5>Versión 0.8.1</h5>
                 <a href="//docs.jaxsandwich.com/sandwichcord/v0.8.x/javadoc">Documentación</a>
                 <a href="https://github.com/SandwichBotsTeam/sandwichcord-framework/releases/tag/v0.8.1-beta">Descargar</a>
