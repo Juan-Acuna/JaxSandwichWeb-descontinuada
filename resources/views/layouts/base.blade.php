@@ -7,7 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <title>@yield('title')</title>
         <link rel="stylesheet" href="{{ asset('assets/css/estilos.css') }}">
-        <link rel="shortcut icon" href="{{ asset('assets/img/favicon3.png') }}" type="image/png">
+        <link rel="shortcut icon" href="{{ asset('assets/img/favicon7.png') }}" type="image/png">
     </head>
     <body class="bg-dark text-white">
         <nav class="navbar navbar-dark navbar-expand-lg bg-danger text-white">
