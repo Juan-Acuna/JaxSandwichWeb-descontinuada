@@ -7,6 +7,12 @@
     position: relative;
 }
 .note{
-    left:15%!important;
-    top:12%!important;
+    left: 0.5%!important;
+    top: 5%!important;
+    border-radius: 7px!important;
+    padding: 2px 7px 3px 7px!important;
+    color: #fff!important;
+    font-size: .75em!important;
+    font-weight: 700!important;
+    line-height: 1!important;
 }
